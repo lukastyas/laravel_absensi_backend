@@ -21,5 +21,17 @@ class DatabaseSeeder extends Seeder
             'email' => 'lukas@example.com',
             'password' => Hash::make('12345678'),
         ]);
+
+        //data dummy for company
+        \App\Models\Company::create([
+            'name' => 'PT Adyawinsa Stamping Industries',
+            'email' => 'marketing_asi@adyawinsa.com',
+            'address' => 'Jl. Surotokunto Jl. Aria Adiarsa No. 109, Warungbambu, Kec. Karawang Tim, Karawang, Jawa Barat 41313',
+            'latitude' => '-6.32602',
+            'longitude' => '107.32745',
+            'radius_km' => '0.5',
+            'time_in' => '07:30',
+            'time_out' => '16:30',
+        ]);
     }
 }
